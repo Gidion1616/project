@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Hall,Booking
 
+
+
 class HallSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hall

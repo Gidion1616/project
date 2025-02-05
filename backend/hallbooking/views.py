@@ -14,6 +14,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
+
+
 from django.db.models import Q
 
 
@@ -27,6 +29,7 @@ from django.db.models import Q
 
 @api_view(['POST'])
 def register_user(request):
+    
     try:
         # Extract user data from the request
         data = request.data
@@ -68,6 +71,7 @@ def register_user(request):
 
 @api_view(['POST'])
 def login_user(request):
+    
     try:
         # Extract login data from the request
         data = request.data
@@ -145,6 +149,7 @@ class BookHallView(APIView):
     """
 
     def post(self, request, *args):
+        
         
         hall_id = request.data.get('hall')
         
