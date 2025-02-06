@@ -1,5 +1,8 @@
 from django.db import models
 
+
+
+
 from django.contrib.auth.models import User  # Assuming you're using Django's built-in User model
 
 # Create your models here.

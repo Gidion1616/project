@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import HallDetail from "./pages/HallDetail";
 import Halls from "./pages/Halls";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 import BookingForm from "./pages/BookingForm";
 import PrivateRoute from "./components/PrivateRoutes";
@@ -21,7 +22,7 @@ const App = () => {
           <Route path="/halldetail/:id" element={<HallDetail />} />
           <Route path="/halls" element={<Halls />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route component={NotFound} /> {/* Optional: For 404 handling */}
           <Route element={<PrivateRoute />}>
             <Route path="/booking" element={<BookingForm />} />
           </Route>

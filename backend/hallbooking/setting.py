@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-$0$8$g$6$*#@$#^!@#&$%$^%$&%^&^%&^%&%^&%$^%$%^#@$#^!@#&$%$^%$&%^&^%&^%&%^&%$^%$%^#@'  # noqa
 
 
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['54.152.58.221', 'halls.com', 'www.halls.com']
 DATABASES = {
     'default': {
@@ -14,14 +14,17 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 INSTALLED_APPS = [
+    'hallbooking',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hallbooking',
+   
+    
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

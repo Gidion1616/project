@@ -3,6 +3,9 @@ from .models import Hall,Booking
 
 
 
+
+
+
 class HallSerializer(serializers.ModelSerializer):
     class Meta:
         model = Hall
